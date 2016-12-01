@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic);
+
+@font-face {
+    font-family: S-3;
+    src: url(../fonts/s3.ttf);
+}
+
+.S3{
+    font-family:S-3;
+}

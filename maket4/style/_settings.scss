@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+$maw: 1170px;
+
+$darkGreen: #0e342b;
+$darkFiolet: #101636;
+$darkGray: #062033;
+$lightGray: rgba($darkGray, 0.1);
+$blue: #32b0ee;
+$green: #0eb493;
+$almostWhite: #f4f7f9;
+
+
+@mixin add-prefix($item, $val){
+  $pref: "-webkit-","-moz-","-o-";
+  @each $tmp in $pref{
+    #{$tmp}#{$item}:$val;
+  }
+  $item:$val;
+}
+

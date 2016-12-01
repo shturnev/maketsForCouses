@@ -1,0 +1,286 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic);
+@font-face {
+  font-family: NexaLight;
+  src: url(../fonts/Nexa_Light.otf);
+}
+@font-face {
+  font-family: NexaBold;
+  src: url(../fonts/Nexa_Bold.otf);
+}
+@font-face {
+  font-family: FeltTipWoman;
+  src: url(../fonts/Felt_Tip_Woman.ttf);
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+header, section > .wr, section#aboutMe > .wr > .textBlock, section#portfolio > .wr > ul, section#contact, section#contact > footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#portfolio > .wr > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 90%;
+  height: 75px;
+  border-bottom: 2px solid #d0d1d1;
+  box-sizing: border-box;
+  z-index: 1;
+  margin: 0 5%;
+  justify-content: center;
+  align-items: center;
+}
+header > nav {
+  position: relative;
+}
+header > nav > a {
+  text-decoration: none;
+  display: inline-block;
+  color: #aaabab;
+  text-shadow: 1px 1px 0.1px #fff;
+  font-family: NexaLight;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 25px;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+header > nav > a:hover {
+  color: #848585;
+  cursor: pointer;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+section > .wr {
+  max-width: 1024px;
+  margin: 0 auto;
+  min-height: inherit;
+  box-sizing: border-box;
+  padding: 80px 0 30px 0;
+  justify-content: center;
+  align-items: center;
+}
+section .see-more {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: NexaBold;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-self: flex-end;
+  flex-basis: 100%;
+  text-transform: uppercase;
+}
+section .see-more > span {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/Double-Arrow.png) no-repeat center;
+  background-size: 95%;
+  margin: 15px auto 0 auto;
+  transition: all 0.5s ease;
+}
+section .see-more:hover > span {
+  background-size: 100%;
+}
+section#home {
+  background: url(../img/bg1.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+section#home > .wr .logoAndH1 > #logo {
+  width: 356px;
+  height: 357px;
+  background: url(../img/logo.png) no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+}
+section#home > .wr .logoAndH1 h1 {
+  color: #f1f1f1;
+  font-size: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  flex-basis: 100%;
+  text-align: center;
+}
+section#home > .wr .logoAndH1 h1 .light {
+  font-family: NexaLight;
+}
+section#home > .wr .logoAndH1 h1 .bold {
+  font-family: NexaBold;
+}
+section#home > .wr .see-more {
+  color: #fff;
+}
+section#aboutMe > .wr > .textBlock {
+  width: 100%;
+  position: relative;
+}
+section#aboutMe > .wr > .textBlock > .for-photo {
+  width: 50%;
+}
+section#aboutMe > .wr > .textBlock > .for-photo img {
+  width: 100%;
+}
+section#aboutMe > .wr > .textBlock > .for-text {
+  width: 50%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: #202020;
+}
+section#aboutMe > .wr > .textBlock > .for-text .title {
+  font-family: "Nexa Light";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+section#aboutMe > .wr > .textBlock > .for-text .text {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 38px;
+}
+section#aboutMe > .wr > .textBlock > .for-text .name {
+  font-family: "FeltTipWoman";
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 38px;
+  margin-top: 50px;
+}
+section#aboutMe > .wr > .see-more {
+  color: #aaabab;
+}
+section#aboutMe > .wr > .see-more > span {
+  -webkit-filter: brightness(0.8);
+  -moz-filter: brightness(0.8);
+  -o-filter: brightness(0.8);
+}
+section#portfolio {
+  background: url(../img/bg-2.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+section#portfolio > .wr {
+  position: relative;
+  text-align: center;
+}
+section#portfolio > .wr > h1 {
+  color: white;
+  font-family: "Nexa Light";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 90px;
+  text-transform: uppercase;
+  width: 100%;
+}
+section#portfolio > .wr > ul {
+  justify-content: space-around;
+  align-content: center;
+}
+section#portfolio > .wr > ul > li {
+  width: 160px;
+  height: 139px;
+  margin: 20px;
+}
+section#portfolio > .wr > ul > li > a {
+  display: block;
+  width: inherit;
+  height: inherit;
+  background: no-repeat center;
+  background-size: 100%;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+section#portfolio > .wr > ul > li > a:hover {
+  opacity: 1;
+  background-size: 110%;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+}
+section#portfolio > .wr > .see-more {
+  color: white;
+}
+section#contact {
+  justify-content: center;
+}
+section#contact > .wr {
+  text-align: center;
+}
+section#contact > .wr > address {
+  color: #202020;
+}
+section#contact > .wr > address > .yyy {
+  font-family: "NexaBold";
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+}
+section#contact > .wr > address > .xxx {
+  font-family: "NexaLight";
+  font-size: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+section#contact > .wr > address > .social {
+  margin-top: 10px;
+}
+section#contact > .wr > address > .social > a {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  background: url(../img/Social-Media.png) no-repeat;
+  margin: 0 10px;
+}
+section#contact > .wr > address > .social > a:nth-of-type(1) {
+  background-position: 0 0;
+}
+section#contact > .wr > address > .social > a:nth-of-type(2) {
+  background-position: center 0;
+}
+section#contact > .wr > address > .social > a:nth-of-type(3) {
+  background-position: right 0;
+}
+section#contact > .wr > address > .social > a:hover {
+  -webkit-filter: hue-rotate(20deg);
+  -moz-filter: hue-rotate(20deg);
+  -o-filter: hue-rotate(20deg);
+}
+section#contact > footer {
+  align-self: flex-end;
+  height: 75px;
+  width: 90%;
+  border-top: 2px solid #aaabab;
+  justify-content: center;
+  align-items: center;
+  color: #aaabab;
+  font-family: "NexaLight";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */

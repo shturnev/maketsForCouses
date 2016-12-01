@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+$maw: 1170px;
+
+
+/*-----------------------------------
+Colors
+-----------------------------------*/
+$blue: #00bff0;
+$lightBlue: #72d0f4;
+$darkGray: #222222;
+$gray: #6e6e6e;
+$lightGray: #a7a7a7;
+$red: #ff0000;
+$redDim: #e25050;
+$almostWhite: #f3f3f3;
+
+/*-----------------------------------
+margins
+-----------------------------------*/
+@for $i from 1 through  100{
+  $n: "top", "bottom", "left", "right";
+  @each $tmp in $n{
+    $tmp2: str-slice($tmp, 1, 1);
+    .m#{$tmp2}#{$i}{margin-#{$tmp}:$i+px;}
+  }
+}

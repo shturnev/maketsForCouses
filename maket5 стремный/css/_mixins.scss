@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+
+@mixin add-prefix($item, $val){
+
+  $list: "-webkit-", "-moz-", "-o-";
+
+  @each $tmp in $list{
+    #{$tmp}#{$item}: $val;
+  }
+  $item:$val;
+
+}

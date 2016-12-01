@@ -1,0 +1,872 @@
+@charset "utf-8";
+@import "fonts.css";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+
+/*-----------------------------------
+Общие настройки
+-----------------------------------*/
+.clear{
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    clear:both;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.orange{
+    color: #f7600e;
+}
+
+section{
+    position:relative;
+
+}
+
+.content-wr{
+    position:relative;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+/*-----------------------------------
+Секция header-section
+-----------------------------------*/
+#header-section{
+    min-height: 100vh;
+    background: url(../img/bg-layer.png), url(../img/1.jpg) no-repeat center fixed;
+    background-size: cover ;
+    box-sizing: border-box;
+}
+
+    #header-section>.content-wr{
+        min-height: inherit;
+        box-sizing: border-box;
+
+    }
+
+
+    #header-section>.flex{
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+
+    #header-section header.flex{
+        justify-content: space-between;
+    }
+
+
+        #logo{
+            display: block;
+            position: relative;
+            width: 158px;
+            height: 18px;
+            background: url("../img/Logo.png") no-repeat center;
+            background-size: contain ;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+
+        #header-section nav{
+            position:relative;
+
+        }
+
+            #header-section nav>.for-MenuBtn{
+                color: white;
+                font-family: "Open Sans";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 0;
+                text-decoration: none;
+                position:relative;
+                top: -16px;
+            }
+
+                #header-section nav>.for-MenuBtn:hover>span{
+                    color:#f7600e;
+                }
+
+                #header-section nav>.for-MenuBtn>span.s2{
+                    font-size: 65px;
+                    position:relative;
+                    top: 10px;
+                }
+
+
+    #header-section .for-textBlock{
+        text-align: center;
+    }
+        #header-section .for-textBlock>.for-title{
+            font-family: "Open Sans";
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 75px;
+            color: white;
+            margin: 40px 0;
+        }
+
+        #header-section .for-textBlock>.for-text{
+            color: white;
+            font-family: "Open Sans";
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 40px;
+            max-width: 68%;
+            margin: 0 auto 60px auto;
+
+        }
+
+        #header-section .for-textBlock>.for-btns{
+
+        }
+
+            #header-section .for-textBlock>.for-btns>a:first-of-type{
+                margin-right: 25px;
+            }
+
+            #header-section .for-textBlock>.for-btns>a{
+                display:inline-block;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 10px;
+
+                color: white;
+                font-family: "Open Sans";
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 40px;
+                text-decoration: none;
+                min-width: 210px;
+                text-transform: uppercase;
+                transition: all 0.3s ease;
+            }
+
+
+                #header-section .for-textBlock>.for-btns>a:hover{
+                    background-color: #f7600e;
+                    border-color: #f7600e;
+                }
+
+
+        #header-section .for-more{
+            text-align: center;
+            margin: 50px 0;
+        }
+
+            #header-section .for-more>a{
+                display:inline-block;
+                width: 34px;
+                height: 34px;
+                background: url(../img/circle_arrow_down.png) no-repeat center;
+                background-size:contain;
+
+                opacity: 0.8;
+                transition: opacity 0.3s ease;
+            }
+
+                #header-section .for-more>a:hover{
+                    opacity: 1;
+                }
+
+
+/*-----------------------------------
+Секция our-services
+-----------------------------------*/
+
+#our-services{
+
+}
+
+    #our-services ul.content-wr.flex{
+        list-style: none;
+        padding: 100px 0 0 0;
+
+        justify-content: space-around;
+    }
+
+        #our-services ul>li{
+            width: 265px;
+            margin-bottom: 100px;
+        }
+
+            #our-services ul>li>a{
+                display: block;
+                text-align: center;
+                text-decoration: none;
+            }
+
+
+                #our-services ul>li>a>.for-icon{
+                    width: 151px;
+                    height: 151px;
+                    border: 1px solid rgba(59, 67, 76, 0.3);
+                    border-radius: 50%;
+                    margin: 0 auto 25px auto;
+
+                    background: no-repeat center;
+
+                }
+
+
+                #our-services ul>li>a>.for-title{
+                    color: #3b434c;
+                    font-family: "Open Sans";
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 40px;
+                    margin-bottom: 17px;
+                    transition: color 0.3s ease;
+
+                }
+
+                    #our-services ul>li>a:hover>.for-title{
+                        color:#f7600e;
+                    }
+
+
+                #our-services ul>li>a>.for-text{
+                    color: #3b434c;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    max-width: 67%;
+                    margin: 0 auto;
+                }
+
+
+/*-----------------------------------
+Секция newslatter
+-----------------------------------*/
+#newsletter{
+    background: url(../img/bg-layer.png), url(../img/cuoples.jpg) no-repeat center fixed;
+}
+
+    #newsletter .for-form.flex{
+        min-height: 250px;
+
+        justify-content:center;
+        align-items: center;
+    }
+
+        #newsletter .for-form>[type='text']{
+            height: 50px;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            outline: none;
+            padding: 0 25px;
+            width: 50%;
+
+            color: #3b434c;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 300;
+            box-sizing: border-box;
+            margin-right: 2%;
+        }
+
+        #newsletter .for-form>[type='submit']{
+            width: 24%;
+            height: 50px;
+            background-color: #f7600e;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            outline: none;
+
+            color: white;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 600;
+            box-sizing: border-box;
+
+        }
+
+
+/*-----------------------------------
+Секция для our-works
+-----------------------------------*/
+#our-works{}
+    #our-works > .content-wr.flex{
+        min-height: 100vh;
+        box-sizing: border-box;
+        padding: 100px 0;
+
+        flex-direction: column;
+        justify-content: space-between ;
+        align-items: center;
+
+        text-align: center;
+    }
+
+        #our-works .row-1{
+            max-width: 555px;
+        }
+
+            #our-works .row-1>.for-title{
+                font-family: "Open Sans";
+                font-size: 35px;
+                font-weight: 600;
+                line-height: 40px;
+                margin-bottom: 30px;
+            }
+
+            #our-works .row-1>.for-text{
+                color: #3b434c;
+                font-family: "Open Sans";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+
+
+    #our-works ul.row-2.flex{
+        list-style: none;
+        margin: 100px 0;
+        padding: 0;
+
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        #our-works ul.row-2>li{
+            width: 360px;
+            height: 360px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+
+            #our-works ul.row-2>li:hover .for-hover{
+                opacity: 1;
+            }
+
+
+            #our-works ul.row-2>li>a{
+                width: inherit; height: inherit;
+                display: block;
+                text-decoration: none;
+            }
+
+                #our-works ul.row-2>li>a>.for-img{
+                    width: inherit; height: inherit;
+                    background: no-repeat center;
+                    background-size: cover;
+                    position: absolute;
+                }
+
+                #our-works ul.row-2>li>a>.for-hover{
+                    width: inherit; height: inherit;
+                    box-sizing: border-box;
+                    position: relative;
+                    background: rgba(247,96,14, 0.9);
+
+                    padding: 0 75px;
+                    color:white;
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    opacity:0;
+                    transition: opacity 0.5s ease;
+                }
+
+                    #our-works ul.row-2>li>a>.for-hover>.for-title{
+                        font-family: "Open Sans";
+                        font-size: 25px;
+                        font-weight: 600;
+                        line-height: 40px;
+                        text-transform: uppercase;
+                        margin-bottom: 25px;
+                    }
+
+                    #our-works ul.row-2>li>a>.for-hover>.for-text{
+                        font-family: "Open Sans";
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        margin-bottom: 40px;
+                    }
+
+                    #our-works ul.row-2>li>a>.for-hover>.for-btn{
+                        background-color: white;
+                        border: 1px solid white;
+                        border-radius: 10px;
+
+                        color: #f7600e;
+                        font-family: "Open Sans";
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 40px;
+                    }
+
+#our-works .row-3{
+
+    }
+        #our-works .row-3>a{
+            display: inline-block;
+            width: 210px;
+            border: 1px solid rgba(59, 67, 76, 0.2);
+            border-radius: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            color: #3b434c;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 40px;
+        }
+
+
+/*-----------------------------------
+Секция clients-say
+-----------------------------------*/
+#clients-say{
+    background: url(../img/bg-layer.png), url(../img/woman.jpg) no-repeat center fixed;
+    padding: 100px 0;
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+    #clients-say>a{
+        display: block;
+        width: 21px;
+        height: 40px;
+        margin: 0 50px;
+
+        background: url(../img/arrow_left.png) no-repeat center ;
+        background-size:contain;
+        opacity:0.8;
+        transition: opacity 0.3s ease;
+
+    }
+
+        #clients-say>a:hover{
+            opacity: 1;
+        }
+
+    #clients-say>a.next{
+        transform: rotate(180deg);
+    }
+
+
+    #clients-say>.for-comment{
+        max-width: 1140px;
+        text-align: center;
+    }
+
+        #clients-say>.for-comment>.for-avatar{
+            width: 120px;
+            height: 120px;
+            border: 1px solid transparent;
+            background: no-repeat center;
+            border-radius: 50%;
+            margin: 0 auto 50px auto;
+        }
+
+        #clients-say>.for-comment>.for-text{
+            color: white;
+            font-family: "Open Sans";
+            font-size: 25px;
+            font-style: italic;
+            line-height: 40px;
+
+            max-width: 70%;
+            margin: 0 auto 50px auto;
+        }
+
+        #clients-say>.for-comment>.for-nickname{
+            color: white;
+            font-family: "Open Sans";
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 40px;
+        }
+
+
+
+/*-----------------------------------
+Секция our-team
+-----------------------------------*/
+#our-team{}
+
+    #our-team>.content-wr.flex{
+        min-height: 100vh;
+        box-sizing: border-box;
+        padding: 100px 0;
+        text-align: center;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        #our-team .row-1>.for-title{
+            height: 26px;
+            font-family: "Open Sans";
+            font-size: 35px;
+            font-weight: 600;
+            color: #3b434c;
+            margin-bottom: 30px;
+        }
+
+        #our-team .row-1>.for-text{
+            color: #3b434c;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            max-width: 475px;
+            margin: 0 auto 100px auto;
+        }
+
+
+        #our-team ul.row-2.flex{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            justify-content:space-around;
+            align-items: flex-start;
+        }
+
+            #our-team .row-2>li{
+                width: 262px;
+                margin-bottom: 100px;
+            }
+                #our-team .row-2>li>.for-photo{
+                    display: flex;
+                    width: 100%;
+                    height: 314px;
+
+                    justify-content: center;
+                    align-items: flex-end;
+
+                }
+
+                #our-team .row-2>li>.for-photo>span{
+                    display: block;
+                    width: 235px;
+                    height: 285px;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+
+                    background: no-repeat center;
+                    background-size: cover;
+
+                    -webkit-filter: grayscale(100%);
+                    -moz-filter: grayscale(100%);
+                    -o-filter: grayscale(100%);
+                    filter: grayscale(100%);
+
+                    transition: all 0.5s ease;
+                }
+
+                    #our-team .row-2>li:hover>.for-photo>span{
+
+                        -webkit-filter: grayscale(0%);
+                        filter: grayscale(0%);
+
+                        width:inherit; height: inherit;
+
+
+                        border-width: 1px 0 3px 0;
+                        border-radius: 10px 10px 0 0 ;
+                        border-bottom: 5px solid #f7600e;
+
+                    }
+
+
+                #our-team .row-2>li>.for-name{
+                    color: #9da1a5;
+                    font-family: "Open Sans";
+                    font-size: 25px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    margin: 25px 0;
+                    transition: all 0.5s ease;
+
+                }
+
+                    #our-team .row-2>li:hover>.for-name, #our-team .row-2>li:hover>.for-text{
+                        color:#3b434c;
+                    }
+
+
+                #our-team .row-2>li>.for-social{
+                    margin-bottom: 30px;
+
+                }
+
+                        #our-team .row-2>li>.for-social>a{
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                            border: 1px solid transparent;
+                            border-radius: 50%;
+                            margin-right: 15px;
+                            text-decoration: none;
+                            background: url(../img/Social-Media_Icons.png) no-repeat;
+                            opacity: 0.5;
+                            transition: all 0.5s ease;
+                        }
+
+                        #our-team .row-2>li>.for-social>a:last-of-type{
+                            margin-right: 0;
+                        }
+
+
+                        #our-team .row-2>li>.for-social>a:nth-of-type(1){
+                            background-position: 0 0;
+                        }
+                        #our-team .row-2>li>.for-social>a:nth-of-type(2){
+                            background-position: center 0;
+                        }
+                        #our-team .row-2>li>.for-social>a:nth-of-type(3){
+                            background-position: right 0;
+                        }
+
+                            #our-team .row-2>li:hover>.for-social>a{
+                                background-image: url(../img/Social-Media-Icons-2.png);
+                                opacity: 1;
+
+                            }
+
+
+                    #our-team .row-2>li>.for-text{
+                    color: #9da1a5;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    transition: all 0.5s ease;
+                    padding: 0 10px;
+
+                }
+
+        #our-team .row-3{
+            justify-content: center;
+            align-items: center;
+        }
+            #our-team .row-3>a{
+                display: flex;
+
+                justify-content:center;
+                align-items:center;
+
+                width: 15px;
+                height: 15px;
+                margin-right: 15px;
+            }
+
+            #our-team .row-3>a:last-of-type{
+                margin-right: 0;
+            }
+
+            #our-team .row-3>a:hover>span, #our-team .row-3>a.active>span{
+                width:inherit; height:inherit;
+                background-color: #f7600e;
+            }
+
+            #our-team .row-3>a>span{
+                display: block;
+                width: 70%;
+                height: 70%;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                background-color: #c4c6c9;
+                box-sizing: border-box;
+                transition: all 0.3s ease;
+            }
+
+/*-----------------------------------
+Секция contacts
+-----------------------------------*/
+#contacts{
+    background: url(../img/bg-layer.png), url(../img/city.jpg) no-repeat center fixed;
+}
+
+    #contacts>.content-wr{
+        min-height: 100vh;
+        justify-content: center;
+        align-content: space-between;
+
+        padding: 100px 0;
+
+        box-sizing: border-box;
+        text-align: center;
+
+    }
+
+        #contacts>.content-wr>.row-1, #contacts>.content-wr>.row-2, #contacts>.content-wr>.row-3{
+            width: 100%;
+        }
+            #contacts>.content-wr>.row-1>.for-title{
+                font-family: "Open Sans";
+                font-size: 35px;
+                font-weight: 600;
+                line-height: 40px;
+                color:#fff;
+            }
+
+            #contacts>.content-wr>.row-1>.for-text{
+                color: white;
+                font-family: "Open Sans";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+                max-width: 465px;
+
+                margin: 30px auto 100px auto;
+            }
+
+        #contacts>.content-wr>.row-2{
+            max-width: 73%;
+        }
+
+            #contacts>.content-wr>.row-2 .for-form.flex{
+                justify-content: space-between;
+            }
+
+                #contacts>.content-wr>.row-2 .for-form>[type='text']{
+                    height: 50px; width: 49%;
+                    background-color: white;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+                    padding: 0 15px;
+                    box-sizing: border-box;
+
+                    color: #3b434c;
+                    font-family: "Open Sans";
+                    font-size: 16px;
+                    font-weight: 400;
+                    outline: none;
+                }
+
+                #contacts>.content-wr>.row-2 .for-form>textarea{
+                    width: 100%; height: 200px;
+                    background-color: white;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+                    padding: 15px;
+                    margin: 30px 0;
+                    box-sizing: border-box;
+
+                    color: #3b434c;
+                    font-family: "Open Sans";
+                    font-size: 16px;
+                    font-weight: 400;
+                    outline: none;
+                }
+
+                #contacts>.content-wr>.row-2 .for-form>[type='submit']{
+                    width: 210px;
+                    height: 50px;
+                    background-color: #f7600e;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+
+                    color: white;
+                    font-family: "Open Sans";
+                    font-size: 16px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    opacity: 0.8;
+                    transition: opacity 0.3s ease;
+                }
+
+                #contacts>.content-wr>.row-2 .for-form>[type='submit']:hover{
+                    opacity: 1;
+                }
+
+                #contacts>.content-wr>.row-2 .for-form>.for-social{
+
+                }
+                    #contacts>.content-wr>.row-2 .for-form>.for-social>a{
+                        display: inline-block;
+                        width: 43px;
+                        height: 43px;
+
+                        background: url(../img/Social-Media-Icons-3.png) no-repeat;
+                        opacity: 0.8;
+                        transition: opacity 0.3s ease;
+                        margin-right: 20px;
+                    }
+                        #contacts>.content-wr>.row-2 .for-form>.for-social>a:hover{
+                            opacity: 1;
+                        }
+
+                        #contacts>.content-wr>.row-2 .for-form>.for-social>a:last-of-type{
+                            margin-right: 0;
+                        }
+                        #contacts>.content-wr>.row-2 .for-form>.for-social>a:nth-of-type(1){
+                            background-position: 0 0;
+                        }
+                        #contacts>.content-wr>.row-2 .for-form>.for-social>a:nth-of-type(2){
+                            background-position: 25% 0;
+                        }
+                        #contacts>.content-wr>.row-2 .for-form>.for-social>a:nth-of-type(3){
+                            background-position: center 0;
+                        }
+                        #contacts>.content-wr>.row-2 .for-form>.for-social>a:nth-of-type(4){
+                            background-position: 75% 0;
+                        }
+                        #contacts>.content-wr>.row-2 .for-form>.for-social>a:nth-of-type(5){
+                            background-position: right 0;
+                        }
+                        
+                        
+/*-----------------------------------
+footer
+-----------------------------------*/                        
+footer{
+    background: #3b434c;
+}
+
+    footer>.content-wr.flex{
+        min-height:100px;
+
+        justify-content: space-between;
+        align-items: center;
+
+        color: white;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+

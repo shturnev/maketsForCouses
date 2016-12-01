@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import '../fonts/fonts';
+
+/*------------------------------
+Переменные + цвета
+-------------------------------*/
+$maw: 1088px;
+
+$red: #ff505a;
+$lightGray: #e1e1e1;
+$almostWhite: #f2f2f2;
+$gray: #747474;
+$darkGray: darken($gray, 25%);
+$brown: #2f2f2f;
+
+/*------------------------------
+Глобальные настройки
+-------------------------------*/
+html, body{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-family: "Open Sans", sans-serif;
+  background-color: $almostWhite;
+}
+
+.wr{
+  position: relative;
+  max-width: $maw;
+  margin: 0 auto;
+}
+
+.red{
+  color: $red;
+}
+
+%ul{
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+%flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section{
+  position: relative;
+}
+
+.hline{
+  align-self: stretch;
+  width: 1px;
+}
+
+
+/*-----------------------------------
+доп классы
+-----------------------------------*/
+@for $i from 1 through 100 {
+  .h#{$i} { height: $i + px; }
+}
+
