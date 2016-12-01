@@ -279,7 +279,36 @@ $robotoFont: 'Roboto Slab', serif;
 
 }
 footer{
+  @extend %flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
   margin-top: 25px;
   background-color: $bgColor;
   border-top: 1px dashed silver;
+
+  nav{
+    a{
+      display: inline-block;
+      margin-right: 5px;
+      font-family: $robotoFont;
+      font-size: 15px;
+      font-weight: 400;
+      text-decoration: none;
+      color: $darkGray;
+      
+      &:hover{
+        color: $pink;
+      }
+    }
+  }
+  .col-2{
+    font-family: $robotoFont;
+    font-size: 33px;
+  }
+  .col-3{
+    font-family: $robotoFont;
+    font-size: 15px;
+    font-weight: 400;
+  }
 }
