@@ -7,6 +7,9 @@
 @font-face {
   font-family: 'HelveticaNeueCyr-Thin';
   src: local("HelveticaNeueCyr-Thin"), url("http://nomail.com.ua/files/woff/3036ae86f3e196e33d3be155da20f495.woff") format("woff"); }
+@font-face {
+  font-family: 'HelveticaNeueCyr-Roman';
+  src: local("HelveticaNeueCyr-Roman"), url("http://nomail.com.ua/files/woff/cd2355028bca504c63a432c086eceb52.woff") format("woff"); }
 html, body {
   margin: 0;
   padding: 0;
@@ -21,16 +24,36 @@ header {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 24px 0;
     font-family: 'HelveticaNeueCyr-Black';
     color: #ffffff;
     font-size: 18px;
     font-weight: 900;
-    line-height: 44px;
     text-align: left; }
     header .header .logo span {
       font-family: 'HelveticaNeueCyr-Thin';
       color: #ffffff;
       font-weight: 100;
       text-align: left; }
+  header .header .for-buttons {
+    padding: 24px 0; }
+    header .header .for-buttons a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px; }
+  header .header .sign-in, header .header .sign-up {
+    display: inline-block;
+    font-family: 'HelveticaNeueCyr-Roman';
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    border-radius: 3px;
+    padding: 5px 20px;
+    vertical-align: middle; }
+    header .header .sign-in:hover, header .header .sign-up:hover, header .header .sign-in.active, header .header .active.sign-up {
+      background-color: #0aaee4; }
+  header .header .sign-up {
+    margin-right: 15px; }
 
 /*# sourceMappingURL=app.css.map */

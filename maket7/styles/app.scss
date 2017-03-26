@@ -19,24 +19,51 @@ header{
         display:block;
         text-decoration: none;
         text-transform: uppercase;
+        padding: 24px 0;
 
         font-family: 'HelveticaNeueCyr-Black';
         color: #ffffff;
         font-size: 18px;
         font-weight: 900;
-        line-height: 44px;
         text-align: left;
 
         span{
           font-family: 'HelveticaNeueCyr-Thin';
           color: #ffffff;
-          //font-size: 50px;
           font-weight: 100;
-          //line-height: 44px;
           text-align: left;
         }
 
 
+      }
+
+      .for-buttons{
+        padding: 24px 0;
+
+        a{
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+      }
+      .sign-in{
+        display: inline-block;
+        font-family: 'HelveticaNeueCyr-Roman';
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: right;
+        border-radius: 3px;
+        padding: 5px 20px;
+        vertical-align: middle;
+
+        &:hover, &.active{
+          background-color:  #0aaee4;
+        }
+      }
+      .sign-up{
+        @extend .sign-in;
+        margin-right: 15px;
       }
   }
 }
