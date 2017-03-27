@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import "fonts";
+@import "settings";
+
+
+section#top {
+  position: relative;
+  height: 100vh;
+  background: no-repeat center 0 / cover;
+  background-attachment: fixed;
+}
+
+.wr{
+  @extend %flex;
+
+
+}
+nav{
+  ul {
+    @extend %ul;
+    max-width: 600px;
+    margin: 45px 100px;
+
+      li {
+        display: inline-flex;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: space-between;
+        flex-flow: row wrap;
+        text-decoration: none;
+
+      }
+  }
+}
+.text_top{
+
+
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  padding: 10px;
+  margin: 20px;
+}
+.inquire{
+
+  min-width: 1000px;
+  display: inline-block;
+  flex-flow: row wrap;
+
+  padding: 10px;
+  margin: 20px 18,25em;
+}
+
+
+
+
+
+
+
