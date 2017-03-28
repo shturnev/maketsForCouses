@@ -9,6 +9,7 @@ html, body{
   font-size: 1px;
   height: 100%;
   min-height: 100%;
+  background: $silverLight;
 }
 
 header{
@@ -161,7 +162,128 @@ ul.slider{
         }
 
       }
+      .right-col{
+        a{
+          color: white;
+          
+          &:hover{
+            color: $blue;
+          }
+        }
+        a.btn{
+          display: inline-block;
+          border: 1px solid white;
+          border-radius: 3px;
+
+          font-family: 'HelveticaNeueCyr-Roman';
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 100;
+          padding: 4px 15px;
+          margin-right: 10px;
+          
+          &:hover, &.active{
+            background-color:  $blue;
+            border-color: $blue;
+          }
+
+        }
+        .more{
+          margin-left: 10px;
+          i{
+            font-size: 26px;
+            line-height: 0;
+            vertical-align: middle;
+          }
+        }
+      }
     }
   }
 
+}
+#content{
+  max-width: 2000px;
+  margin: 35px auto 0 auto;
+  font-size: 14px;
+  position: relative;
+
+  .category{
+
+    a{
+      display: inline-block;
+      font-family: 'HelveticaNeueCyr-Roman';
+      font-size: 14px; /* Приближение из-за подстановки шрифтов */
+      margin-right: 20px;
+      border-bottom: 1px solid transparent;
+      
+      &:hover, &.active{
+        border-bottom: 1px solid $blue;
+      }
+
+      &.plus{
+        i{
+          vertical-align: middle;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .change-grid{
+    a{
+      display: inline-block;
+      color: $silver;
+
+      &:hover, &.active{
+        color: $blue;
+      }
+
+      i{
+        font-size: 20px;
+      }
+    }
+  }
+  .film-list{
+    margin-top: 15px;
+
+    .film-item{
+      background: white;
+      background-clip: content-box;
+
+      .poster{
+        background: no-repeat 0 0 / cover;
+      }
+      .short-info{
+        flex-wrap: nowrap;
+        padding: 20px;
+
+        .title{
+          font-family: 'HelveticaNeueCyr-Bold';
+          color: $grayDark;
+          font-size: 11px;
+          text-transform: uppercase;
+          max-width: 115px;
+          overflow-x: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+
+        }
+        .genre{
+          font-family: 'HelveticaNeueCyr-Roman';
+          color: $blueLight;
+          font-size: 11px;
+          margin-top: 5px;
+        }
+        .rate{
+          border-radius: 3px;
+          border: 1px solid $blue;
+          font-family: 'HelveticaNeueCyr-Thin';
+          color: $blue;
+          font-size: 10px; /* Приближение из-за подстановки шрифтов */
+          padding: 0 3px;
+        }
+      }
+    }
+
+
+  }
 }
