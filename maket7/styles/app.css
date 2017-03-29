@@ -20,6 +20,9 @@
 @font-face {
   font-family: 'HelveticaNeueCyr-Bold';
   src: local("HelveticaNeueCyr-Bold"), url("http://nomail.com.ua/files/woff/7ac1c8f0b974a943aa67859c07f86bd2.woff") format("woff"); }
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: local("HelveticaNeueCyr-Light"), url("http://nomail.com.ua/files/woff/2127aa6d0680b144a3bd8be9debeba09.woff") format("woff"); }
 html, body {
   margin: 0;
   padding: 0;
@@ -189,8 +192,8 @@ ul.slider {
     #content .change-grid a i {
       font-size: 20px; }
   #content .film-list {
-    margin-top: 15px;
-    height: 260px; }
+    position: relative;
+    margin-top: 15px; }
     #content .film-list .film-item {
       position: relative;
       background: white;
@@ -314,5 +317,46 @@ ul.slider {
               padding: 6px 10px; }
               #content .film-list .film-item .full-info .info .for-btn a:hover, #content .film-list .film-item .full-info .info .for-btn a.active {
                 background-color: #47c3f0; }
+  #content .subscribe {
+    position: relative;
+    background: no-repeat center / cover;
+    background-clip: content-box;
+    padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 2000px;
+    margin: 0 auto; }
+    #content .subscribe .wr {
+      position: relative;
+      padding: 70px 30px; }
+      #content .subscribe .wr:before {
+        content: '';
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; }
+      #content .subscribe .wr .title {
+        position: relative;
+        font-family: 'HelveticaNeueCyr-Light';
+        color: white;
+        font-size: 28px;
+        /* Приближение из-за подстановки шрифтов */
+        max-width: 65%;
+        margin: 0 auto; }
+      #content .subscribe .wr .btn {
+        position: relative;
+        font-family: 'HelveticaNeueCyr-Thin';
+        color: white;
+        font-size: 14px;
+        display: inline-block;
+        padding: 6px 15px;
+        background: #0aaee4;
+        border-radius: 3px;
+        margin-top: 15px; }
+        #content .subscribe .wr .btn:hover, #content .subscribe .wr .btn.active {
+          background: #47c3f0; }
 
 /*# sourceMappingURL=app.css.map */
