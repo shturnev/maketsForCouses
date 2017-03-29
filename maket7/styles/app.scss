@@ -244,10 +244,19 @@ ul.slider{
   }
   .film-list{
     margin-top: 15px;
+    height: 260px;
 
     .film-item{
+      position: relative;
       background: white;
       background-clip: content-box;
+      margin-bottom: 25px;
+      
+      &:hover, &.active{
+        .full-info{
+          display: block;
+        }
+      }
 
       .poster{
         background: no-repeat 0 0 / cover;
@@ -257,6 +266,7 @@ ul.slider{
         padding: 20px;
 
         .title{
+          display: inline-block;
           font-family: 'HelveticaNeueCyr-Bold';
           color: $grayDark;
           font-size: 11px;
@@ -265,6 +275,10 @@ ul.slider{
           overflow-x: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
+          
+          &:hover, &.active{
+            color: $blue;
+          }
 
         }
         .genre{
@@ -281,6 +295,125 @@ ul.slider{
           font-size: 10px; /* Приближение из-за подстановки шрифтов */
           padding: 0 3px;
         }
+      }
+      .full-info{
+        display: none;
+        background: no-repeat center / cover;
+        background-clip: content-box;
+        padding:0 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(black, 0.45);
+          background-clip: content-box;
+          padding: 0 20px;
+          box-sizing: border-box;
+
+        }
+
+        .info{
+          position: relative;
+          padding: 20px;
+
+          .close{
+            color: white;
+            
+            &:hover, &.active{
+              color: $blue;
+            }
+
+            i{
+              font-size: 20px;
+              vertical-align: middle;
+            }
+          }
+          .link{
+            font-family: 'HelveticaNeueCyr-Roman';
+            font-size: 14px;
+            color: white;
+            vertical-align: middle;
+
+            i{
+              vertical-align: middle;
+              font-size: 20px;
+            }
+
+            &:hover, &.active{
+              color: $blue;
+            }
+          }
+
+          .flex{
+            display: flex;
+            justify-content: space-between;
+
+          }
+          .title{
+            font-family: 'HelveticaNeueCyr-Bold';
+            color: #ffffff;
+            font-size: 12px; /* Приближение из-за подстановки шрифтов */
+            text-transform: uppercase;
+            margin-top: 10px;
+          }
+          .categ{
+            font-family: 'HelveticaNeueCyr-Roman';
+            color: $blueLight;
+            font-size: 10px;
+          }
+          .rate{
+            border-radius: 3px;
+            border: 1px solid $blue;
+            font-family: 'HelveticaNeueCyr-Thin';
+            color: $blue;
+            font-size: 10px;
+            padding: 0 3px;
+            align-self: baseline;
+            margin-top: 10px;
+
+          }
+
+          .descr{
+            font-family: 'HelveticaNeueCyr-Thin';
+            color: white;
+            font-size: 12px; /* Приближение из-за подстановки шрифтов */
+            max-height: 107px;
+            overflow: hidden;
+            margin-top: 10px;
+          }
+
+          .for-btn{
+            margin-top: 20px;
+
+            a{
+              display: inline-block;
+              border-radius: 3px;
+              background-color: $blue  ;
+
+              font-family: 'HelveticaNeueCyr-Thin';
+              color: #ffffff;
+              font-size: 13px; /* Приближение из-за подстановки шрифтов */
+              padding: 6px 10px;
+
+              &:hover, &.active{
+                background-color:  $blueLight;
+              }
+            }
+          }
+
+        }
+
+
       }
     }
 
