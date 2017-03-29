@@ -189,8 +189,10 @@ ul.slider {
     #content .change-grid a i {
       font-size: 20px; }
   #content .film-list {
-    margin-top: 15px; }
+    margin-top: 15px;
+    height: 260px; }
     #content .film-list .film-item {
+      position: relative;
       background: white;
       background-clip: content-box; }
       #content .film-list .film-item .poster {
@@ -199,6 +201,7 @@ ul.slider {
         flex-wrap: nowrap;
         padding: 20px; }
         #content .film-list .film-item .short-info .title {
+          display: inline-block;
           font-family: 'HelveticaNeueCyr-Bold';
           color: #242b2d;
           font-size: 11px;
@@ -207,6 +210,8 @@ ul.slider {
           overflow-x: hidden;
           white-space: nowrap;
           text-overflow: ellipsis; }
+          #content .film-list .film-item .short-info .title:hover, #content .film-list .film-item .short-info .title.active {
+            color: #0aaee4; }
         #content .film-list .film-item .short-info .genre {
           font-family: 'HelveticaNeueCyr-Roman';
           color: #47c3f0;
@@ -220,5 +225,38 @@ ul.slider {
           font-size: 10px;
           /* Приближение из-за подстановки шрифтов */
           padding: 0 3px; }
+      #content .film-list .film-item .full-info {
+        background: no-repeat center / cover;
+        background-clip: content-box;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box; }
+        #content .film-list .film-item .full-info:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.1); }
+        #content .film-list .film-item .full-info .close {
+          color: white; }
+          #content .film-list .film-item .full-info .close i {
+            font-size: 20px;
+            vertical-align: middle; }
+        #content .film-list .film-item .full-info .link {
+          font-family: 'HelveticaNeueCyr-Roman';
+          font-size: 14px;
+          color: white;
+          vertical-align: middle; }
+          #content .film-list .film-item .full-info .link i {
+            vertical-align: middle;
+            font-size: 20px; }
+          #content .film-list .film-item .full-info .link:hover, #content .film-list .film-item .full-info .link.active {
+            color: #0aaee4; }
 
 /*# sourceMappingURL=app.css.map */

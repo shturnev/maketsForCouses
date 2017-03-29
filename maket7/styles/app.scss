@@ -244,8 +244,10 @@ ul.slider{
   }
   .film-list{
     margin-top: 15px;
+    height: 260px;
 
     .film-item{
+      position: relative;
       background: white;
       background-clip: content-box;
 
@@ -257,6 +259,7 @@ ul.slider{
         padding: 20px;
 
         .title{
+          display: inline-block;
           font-family: 'HelveticaNeueCyr-Bold';
           color: $grayDark;
           font-size: 11px;
@@ -265,6 +268,10 @@ ul.slider{
           overflow-x: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
+          
+          &:hover, &.active{
+            color: $blue;
+          }
 
         }
         .genre{
@@ -280,6 +287,53 @@ ul.slider{
           color: $blue;
           font-size: 10px; /* Приближение из-за подстановки шрифтов */
           padding: 0 3px;
+        }
+      }
+      .full-info{
+        background: no-repeat center / cover;
+        background-clip: content-box;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+
+        &:before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(black, 0.1);
+        }
+
+
+
+        .close{
+          color: white;
+
+          i{
+            font-size: 20px;
+            vertical-align: middle;
+          }
+        }
+        .link{
+          font-family: 'HelveticaNeueCyr-Roman';
+          font-size: 14px;
+          color: white;
+          vertical-align: middle;
+
+          i{
+            vertical-align: middle;
+            font-size: 20px;
+          }
+          
+          &:hover, &.active{
+            color: $blue;
+          }
         }
       }
     }
