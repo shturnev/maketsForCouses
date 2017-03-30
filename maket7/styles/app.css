@@ -8,6 +8,9 @@
 .is-4-3 {
   padding-top: 75%; }
 
+.light {
+  font-family: 'HelveticaNeueCyr-Thin'; }
+
 @font-face {
   font-family: 'HelveticaNeueCyr-Black';
   src: local("HelveticaNeueCyr-Black"), url("http://nomail.com.ua/files/woff/75fd0b9090247882c700e34fa8ed9c3e.woff") format("woff"); }
@@ -344,7 +347,7 @@ ul.slider {
         color: white;
         font-size: 28px;
         /* Приближение из-за подстановки шрифтов */
-        max-width: 65%;
+        max-width: 500px;
         margin: 0 auto; }
       #content .subscribe .wr .btn {
         position: relative;
@@ -358,5 +361,75 @@ ul.slider {
         margin-top: 15px; }
         #content .subscribe .wr .btn:hover, #content .subscribe .wr .btn.active {
           background: #47c3f0; }
+  #content .loading {
+    position: relative;
+    text-align: center;
+    padding: 40px 0; }
+    #content .loading i {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      position: relative;
+      animation: loader10 1s ease alternate infinite;
+      animation-delay: 0.4s;
+      top: -10px; }
+      #content .loading i::after, #content .loading i::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        animation: loader10 1s ease alternate infinite; }
+      #content .loading i::before {
+        left: -22px;
+        animation-delay: 0.2s; }
+      #content .loading i::after {
+        right: -22px;
+        animation-delay: 0.6s; }
+@keyframes loader10 {
+  0% {
+    box-shadow: 0 10px 0 -10px #0aaee4; }
+  100% {
+    box-shadow: 0 10px 0 #0aaee4; } }
+    #content .loading span {
+      display: block;
+      font-family: 'HelveticaNeueCyr-Roman';
+      color: rgba(36, 43, 45, 0.4);
+      font-size: 11px;
+      text-transform: uppercase; }
+
+footer {
+  font-size: 14px;
+  background: white;
+  padding: 35px 0; }
+  footer nav a {
+    display: inline-block;
+    font-family: 'HelveticaNeueCyr-Roman';
+    color: rgba(36, 43, 45, 0.4);
+    font-size: 12px;
+    /* Приближение из-за подстановки шрифтов */
+    margin-right: 10px; }
+    footer nav a:hover, footer nav a.active {
+      color: #0aaee4; }
+  footer .logo {
+    font-family: 'HelveticaNeueCyr-Black';
+    color: #0aaee4;
+    font-size: 25px;
+    /* Приближение из-за подстановки шрифтов */
+    text-transform: uppercase; }
+  footer .copy {
+    margin-top: 20px;
+    font-family: 'HelveticaNeueCyr-Roman';
+    color: rgba(36, 43, 45, 0.4);
+    font-size: 10px;
+    /* Приближение из-за подстановки шрифтов */ }
+  footer .socials a {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 19px;
+    color: rgba(36, 43, 45, 0.4); }
+    footer .socials a:hover, footer .socials a.active {
+      color: #0aaee4; }
 
 /*# sourceMappingURL=app.css.map */

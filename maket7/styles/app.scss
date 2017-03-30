@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "_helpers.scss", "fonts", "settings";
+@import "_helpers.scss", "fonts", "settings", "loaders-on-scss-master/loaders";
 
 
 
@@ -452,7 +452,7 @@ ul.slider{
         font-family: 'HelveticaNeueCyr-Light';
         color: white;
         font-size: 28px; /* Приближение из-за подстановки шрифтов */
-        max-width: 65%;
+        max-width: 500px;
         margin: 0 auto;
       }
       .btn{
@@ -473,4 +473,67 @@ ul.slider{
     }
 
   }
+  .loading{
+    position: relative;
+    text-align: center;
+    padding: 40px 0;
+
+    i{
+      display: inline-block;
+      @include loader10($size: 10px, $color: $blue);
+
+    }
+    span{
+      display:block;
+      font-family: 'HelveticaNeueCyr-Roman';
+      color: rgba(36, 43, 45, 0.4);
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+  }
+}
+footer{
+  font-size: 14px;
+  background: white;
+  padding: 35px 0;
+
+  nav{
+    a{
+      display: inline-block;
+      font-family: 'HelveticaNeueCyr-Roman';
+      color: $silverDark;
+      font-size: 12px; /* Приближение из-за подстановки шрифтов */
+      margin-right: 10px;
+
+      &:hover, &.active{
+       color: $blue;
+      }
+    }
+  }
+  .logo{
+    font-family: 'HelveticaNeueCyr-Black';
+    color: $blue;
+    font-size: 25px; /* Приближение из-за подстановки шрифтов */
+    text-transform: uppercase;
+  }
+  .copy{
+    margin-top: 20px;
+    font-family: 'HelveticaNeueCyr-Roman';
+    color: $silverDark;
+    font-size: 10px; /* Приближение из-за подстановки шрифтов */
+
+  }
+  .socials{
+    a{
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 19px;
+      color: $silverDark;
+
+      &:hover, &.active{
+        color: $blue;
+      }
+    }
+  }
+
 }
