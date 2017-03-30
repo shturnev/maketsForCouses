@@ -39,7 +39,8 @@ header {
   width: 100%;
   z-index: 1; }
   header .wr {
-    position: relative; }
+    position: relative;
+    flex-wrap: nowrap; }
     header .wr .logo {
       display: block;
       text-decoration: none;
@@ -57,6 +58,17 @@ header {
         text-align: left; }
     header .wr .for-buttons {
       padding: 24px 0; }
+      @media (max-width: 40em) {
+        header .wr .for-buttons .btns {
+          padding: 20px;
+          background: rgba(36, 43, 45, 0.4); }
+          header .wr .for-buttons .btns a {
+            display: block;
+            padding: 5px;
+            margin: 0 0 10px 0; }
+            header .wr .for-buttons .btns a:hover, header .wr .for-buttons .btns a.active {
+              color: #0aaee4;
+              background: none; } }
       header .wr .for-buttons a {
         display: inline-block;
         vertical-align: middle;
@@ -81,6 +93,11 @@ header {
           background-color: #0aaee4; }
       header .wr .for-buttons .sign-up {
         margin-right: 15px; }
+    header .wr [for="open-header-btns"] {
+      color: white;
+      padding-right: 20px; }
+    header .wr #open-header-btns:checked + * {
+      display: block !important; }
   header:before {
     content: '';
     display: block;
@@ -169,6 +186,14 @@ ul.slider {
           font-size: 26px;
           line-height: 0;
           vertical-align: middle; }
+      @media (max-width: 40em) {
+        ul.slider li.slideItem > .wr .right-col a {
+          display: block;
+          margin-right: 0 !important;
+          margin-bottom: 10px; } }
+      @media (max-width: 40em) {
+        ul.slider li.slideItem > .wr {
+          position: relative; } }
 
 #content {
   max-width: 2000px;

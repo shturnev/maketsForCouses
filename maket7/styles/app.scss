@@ -18,68 +18,99 @@ header{
   z-index: 1;
 
   .wr{
-      position: relative;
-      .logo{
-        display:block;
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 24px 0;
+    position: relative;
+    flex-wrap: nowrap;
 
-        font-family: 'HelveticaNeueCyr-Black';
+
+    .logo{
+      display:block;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 24px 0;
+
+      font-family: 'HelveticaNeueCyr-Black';
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 900;
+      text-align: left;
+
+      span{
+        font-family: 'HelveticaNeueCyr-Thin';
         color: #ffffff;
-        font-size: 18px;
-        font-weight: 900;
+        font-weight: 100;
         text-align: left;
-
-        span{
-          font-family: 'HelveticaNeueCyr-Thin';
-          color: #ffffff;
-          font-weight: 100;
-          text-align: left;
-        }
-
-
       }
-      .for-buttons{
-        padding: 24px 0;
 
-        a{
-          display: inline-block;
-          vertical-align: middle;
-          margin-left: 10px;
-        }
-        .search{
-          color: white;
-          
-          &:hover{
-            color: $blue;
+
+    }
+    .for-buttons{
+      padding: 24px 0;
+
+      .btns{
+        @media (max-width: 40em) {
+          padding: 20px;
+          background: $silverDark;
+
+          a{
+            display: block;
+            padding: 5px;
+            margin: 0 0 10px 0;
+
+            &:hover, &.active{
+              color: $blue;
+              background:none;
+            }
           }
 
-          i{
-            font-size: 20px;
-          }
         }
-        .sign-in{
-          display: inline-block;
-          font-family: 'HelveticaNeueCyr-Roman';
-          color: #ffffff;
-          font-size: 14px;
-          font-weight: 400;
-          text-align: right;
-          border-radius: 3px;
-          padding: 5px 20px;
-          vertical-align: middle;
-
-          &:hover, &.active{
-            background-color:  $blue;
-          }
-        }
-        .sign-up{
-          @extend .sign-in;
-          margin-right: 15px;
-        }
-
       }
+
+      a{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+      .search{
+        color: white;
+
+        &:hover{
+          color: $blue;
+        }
+
+        i{
+          font-size: 20px;
+        }
+      }
+      .sign-in{
+        display: inline-block;
+        font-family: 'HelveticaNeueCyr-Roman';
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: right;
+        border-radius: 3px;
+        padding: 5px 20px;
+        vertical-align: middle;
+
+        &:hover, &.active{
+          background-color:  $blue;
+        }
+      }
+      .sign-up{
+        @extend .sign-in;
+        margin-right: 15px;
+      }
+
+    }
+    [for="open-header-btns"]{
+      color: white;
+      padding-right: 20px;
+
+    }
+    #open-header-btns:checked+*{
+      display:block !important;
+    }
+
   }
   &:before{
     content: '';
@@ -196,7 +227,20 @@ ul.slider{
             vertical-align: middle;
           }
         }
+
+        @media (max-width: 40em) {
+          a{
+            display: block;
+            margin-right: 0 !important;
+            margin-bottom: 10px;
+          }
+        }
       }
+
+      @media (max-width: 40em) {
+        position: relative;
+      }
+
     }
   }
 
